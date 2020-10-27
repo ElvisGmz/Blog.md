@@ -1,0 +1,64 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#blog{
+    max-width: 1200px;
+    margin: 1rem 2rem;
+}
+
+#blog h1{
+    font-size: 40px;
+    color: #00B0FF;
+}
+
+#blog blockquote{
+    background-color: #F0F0F0;
+    border-left: 5px solid #00B0FF;
+    color: #424242;
+    border-radius: 3px;
+    padding: 0.3rem 1rem;
+    margin: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+#blog hr{
+    margin: 40px 0px;
+    border: 0;
+    background-color: #cecece;
+    height: 0.1px;
+}
+
+#blog a{
+    background-color: #00B0FF;
+    color: #FFF;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-top: 12px;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+}
+
+#blog a:hover{
+    background-color: #0099e0;
+}
+
+#blog ul li{
+    margin-top: 12px;
+}
+
+#blog img{
+    display: flex;
+    max-width: 800px;
+    max-height: 500px;
+    margin: 10px auto;
+}

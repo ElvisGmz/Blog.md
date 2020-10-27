@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/showdown@1.9.0/dist/showdown.min.js"></script>
+    <title>Blog.md</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="blog">
+
+    </div>
+    <script>
+        const converter = new showdown.Converter()
+
+        fetch('archivo.md')
+        .then(md => md.text())
+        .then(result => {
+            const html = converter.makeHtml(result)
+            document.getElementById('blog').innerHTML = html
+        })
+    </script>
+</body>
+</html>
