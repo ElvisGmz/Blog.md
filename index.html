@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/showdown@1.9.0/dist/showdown.min.js"></script>
     <title>Blog.md</title>
+    <link rel="shortcut icon" href="./blog.svg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,7 +13,7 @@
 
     </div>
     <script>
-        const converter = new showdown.Converter()
+        const converter = new showdown.Converter({tables: true, strikethrough: true,})
 
         fetch('archivo.md')
         .then(md => md.text())
