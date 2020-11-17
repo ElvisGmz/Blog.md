@@ -15,7 +15,7 @@ apt-get install apache2
 
 Se mostrara algo como esto:
 
-![Debian%2010%20-%20Apache%20Server%20+%20Git%20Clone%20dbef7e81d8554bdfba6e45ee4ba7b05e/apache.png](Debian%2010%20-%20Apache%20Server%20+%20Git%20Clone%20dbef7e81d8554bdfba6e45ee4ba7b05e/apache.png)
+![blogAsset/apache.png](blogAsset/apache.png)
 
 # Instalar herramienta UFW
 
@@ -27,7 +27,7 @@ apt-get install ufw
 
 Veras algo como esto:
 
-![Debian%2010%20-%20Apache%20Server%20+%20Git%20Clone%20dbef7e81d8554bdfba6e45ee4ba7b05e/ufw.png](Debian%2010%20-%20Apache%20Server%20+%20Git%20Clone%20dbef7e81d8554bdfba6e45ee4ba7b05e/ufw.png)
+![blogAsset/ufw.png](blogAsset/ufw.png)
 
 ## Habilitando acceso con UFW
 
@@ -39,7 +39,7 @@ ufw allow 80/tcp
 
 Como resultado veras esto:
 
-![Debian%2010%20-%20Apache%20Server%20+%20Git%20Clone%20dbef7e81d8554bdfba6e45ee4ba7b05e/ufw_allow.png](Debian%2010%20-%20Apache%20Server%20+%20Git%20Clone%20dbef7e81d8554bdfba6e45ee4ba7b05e/ufw_allow.png)
+![blogAsset/ufw_allow.png](blogAsset/ufw_allow.png)
 
 Luego debes habilitar UFW con el comando:
 
@@ -55,7 +55,7 @@ ufw status
 
 Obteniendo el resultado:
 
-![Debian%2010%20-%20Apache%20Server%20+%20Git%20Clone%20dbef7e81d8554bdfba6e45ee4ba7b05e/ufw_enable.png](Debian%2010%20-%20Apache%20Server%20+%20Git%20Clone%20dbef7e81d8554bdfba6e45ee4ba7b05e/ufw_enable.png)
+![blogAsset/ufw_enable.png](blogAsset/ufw_enable.png)
 
 # Instalando NetTools
 
@@ -67,7 +67,7 @@ apt-get install net-tools
 
 Deberías ver la instalación ejecutándose de esta forma:
 
-![Debian%2010%20-%20Apache%20Server%20+%20Git%20Clone%20dbef7e81d8554bdfba6e45ee4ba7b05e/netools.png](Debian%2010%20-%20Apache%20Server%20+%20Git%20Clone%20dbef7e81d8554bdfba6e45ee4ba7b05e/netools.png)
+![blogAsset/netools.png](blogAsset/netools.png)
 
 # Viendo nuestra IP con NetTools
 
@@ -79,7 +79,7 @@ ifconfig
 
 Veras algo como esto:
 
-![Debian%2010%20-%20Apache%20Server%20+%20Git%20Clone%20dbef7e81d8554bdfba6e45ee4ba7b05e/netconf.png](Debian%2010%20-%20Apache%20Server%20+%20Git%20Clone%20dbef7e81d8554bdfba6e45ee4ba7b05e/netconf.png)
+![blogAsset/netconf.png](blogAsset/netconf.png)
 
 > En este caso vemos que la IP es 192.168.56.101
 
@@ -87,7 +87,7 @@ Veras algo como esto:
 
 Apache trae un web integrada por defecto así que para ejemplo podemos verla simplemente escribiendo la dirección IP de nuestro Servidor en el navegador de la siguiente forma:
 
-![Debian%2010%20-%20Apache%20Server%20+%20Git%20Clone%20dbef7e81d8554bdfba6e45ee4ba7b05e/web.png](Debian%2010%20-%20Apache%20Server%20+%20Git%20Clone%20dbef7e81d8554bdfba6e45ee4ba7b05e/web.png)
+![blogAsset/web.png](blogAsset/web.png)
 
 > Como puedes ver nos muestra el sitio web alojado en Apache
 
@@ -103,7 +103,7 @@ apt-get install git
 
 Veras esto durante la instalación:
 
-![Debian%2010%20-%20Apache%20Server%20+%20Git%20Clone%20dbef7e81d8554bdfba6e45ee4ba7b05e/gitinstall.png](Debian%2010%20-%20Apache%20Server%20+%20Git%20Clone%20dbef7e81d8554bdfba6e45ee4ba7b05e/gitinstall.png)
+![blogAsset/gitinstall.png](blogAsset/gitinstall.png)
 
 # Cambiar o Agregar una Web a nuestro Servidor Apache
 
@@ -131,7 +131,7 @@ git clone https://github.com/ElvisGmz/Spooky-Ghost-Animated
 
 En esta captura puedes ver el proceso de clonación y los archivos que este contiene dentro:
 
-![Debian%2010%20-%20Apache%20Server%20+%20Git%20Clone%20dbef7e81d8554bdfba6e45ee4ba7b05e/clone.png](Debian%2010%20-%20Apache%20Server%20+%20Git%20Clone%20dbef7e81d8554bdfba6e45ee4ba7b05e/clone.png)
+![blogAsset/clone.png](blogAsset/clone.png)
 
 > Usando el comando `ls` podemos ver que la carpeta creada contiene un index.html lo que significa que solo debemos escribir la carpeta donde esta tal archivo después de la dirección IP para acceder a esta web
 
@@ -139,6 +139,6 @@ En esta captura puedes ver el proceso de clonación y los archivos que este cont
 
 Para esto es tan simple como escribir la IP y luego el nombre de la carpeta que contiene el `index.html`. En este caso la dirección para acceder es `[http://192.168.56.101/Spooky-Ghost-Animated/](http://192.168.56.101/Spooky-Ghost-Animated/)` obteniendo el siguiente resultado:
 
-![Debian%2010%20-%20Apache%20Server%20+%20Git%20Clone%20dbef7e81d8554bdfba6e45ee4ba7b05e/result.png](Debian%2010%20-%20Apache%20Server%20+%20Git%20Clone%20dbef7e81d8554bdfba6e45ee4ba7b05e/result.png)
+![blogAsset/result.png](blogAsset/result.png)
 
 > Como ves funciona perfectamente espero te haya gustado esta lectura.
