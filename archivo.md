@@ -3,7 +3,10 @@
 ![](https://blog.desdelinux.net/wp-content/uploads/2019/04/apache-blog.png)
 
 Created: Nov 2, 2020 2:35 PM
-Tags: Special Event, Work
+Author: Elvis Gómez
+
+<br>
+
 
 # Instalar Apache
 
@@ -17,6 +20,8 @@ Se mostrara algo como esto:
 
 ![blogAsset/apache.png](blogAsset/apache.png)
 
+<br>
+
 # Instalar herramienta UFW
 
 UFW nos permitirá bloquear o permitir con un firewall las conexiones que especifiquemos. Lo instalamos de la siguiente manera:
@@ -28,6 +33,8 @@ apt-get install ufw
 Veras algo como esto:
 
 ![blogAsset/ufw.png](blogAsset/ufw.png)
+
+<br>
 
 ## Habilitando acceso con UFW
 
@@ -57,6 +64,8 @@ Obteniendo el resultado:
 
 ![blogAsset/ufw_enable.png](blogAsset/ufw_enable.png)
 
+<br>
+
 # Instalando NetTools
 
 NetTools es una herramienta que nos da información de la red, lo cual nos servirá para ver la IP de nuestro servidor apache y poder acceder a la web. Instalamos usando el siguiente comando:
@@ -68,6 +77,8 @@ apt-get install net-tools
 Deberías ver la instalación ejecutándose de esta forma:
 
 ![blogAsset/netools.png](blogAsset/netools.png)
+
+<br>
 
 # Viendo nuestra IP con NetTools
 
@@ -83,6 +94,8 @@ Veras algo como esto:
 
 > En este caso vemos que la IP es 192.168.56.101
 
+<br>
+
 # Visualizar la Web Alojada
 
 Apache trae un web integrada por defecto así que para ejemplo podemos verla simplemente escribiendo la dirección IP de nuestro Servidor en el navegador de la siguiente forma:
@@ -90,6 +103,8 @@ Apache trae un web integrada por defecto así que para ejemplo podemos verla sim
 ![blogAsset/web.png](blogAsset/web.png)
 
 > Como puedes ver nos muestra el sitio web alojado en Apache
+
+<br>
 
 # Instalando Git
 
@@ -105,6 +120,8 @@ Veras esto durante la instalación:
 
 ![blogAsset/gitinstall.png](blogAsset/gitinstall.png)
 
+<br>
+
 # Cambiar o Agregar una Web a nuestro Servidor Apache
 
 Las web alojadas en la ruta raíz de nuestro Apache se encuentran en `/var/www/html/` . En esta ruta podremos guardar nuestra Web reemplazando el archivo `index.html` que esta dentro de esta ruta o bien simplemente crear una carpeta con la web dentro para acceder a través de ella escribiendo la ruta después de la dirección IP, por ejemplo: `https://192.168.0.1/MiPaginaWeb`
@@ -116,6 +133,8 @@ cd /var/www/html
 ```
 
 > Habiendo hecho esto estaremos en la carpeta donde se alojan las web
+
+<br>
 
 ## Clonando el repositorio de GitHub
 
@@ -134,6 +153,8 @@ En esta captura puedes ver el proceso de clonación y los archivos que este cont
 ![blogAsset/clone.png](blogAsset/clone.png)
 
 > Usando el comando `ls` podemos ver que la carpeta creada contiene un index.html lo que significa que solo debemos escribir la carpeta donde esta tal archivo después de la dirección IP para acceder a esta web
+
+<br>
 
 # Visualizando la Web clonada del repositorio
 

@@ -1,5 +1,5 @@
 *{
-    white-space: normal;
+    white-space: pre-line;
 }
 
 body {
@@ -11,8 +11,9 @@ body {
 
 #blog{
     width: 100vw;
-    max-width: 1144px;
+    max-width: 768px;
     margin: 1rem 2rem;
+    white-space: normal;
 }
 
 #blog p{
@@ -72,13 +73,14 @@ body {
     background-color: #F0F0F0;
     border-left: 5px solid #00B0FF;
     color: #424242;
-    border-radius: 3px;
-    padding: 0.3rem 1rem;
+    padding: 1px 1rem;
     margin: 0;
+    border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
+    white-space: normal;
 }
 
 #blog hr{
@@ -116,7 +118,6 @@ body {
 #blog img{
     display: flex;
     width: 100%;
-    max-width: 90vw;
     margin: 10px auto;
     border-radius: 3px;
     -webkit-border-radius: 3px;
@@ -140,7 +141,7 @@ body {
 }
 
 #blog pre{
-    background-color: #292929;
+    background-color: #3f4447;
     padding: 0.5rem 1rem;
     border-radius: 3px;
     -webkit-border-radius: 3px;
@@ -151,7 +152,7 @@ body {
 
 
 #blog  pre code{
-    background-color: #292929;
+    background-color: #3f4447;
     padding: 0.5rem 0;
     color: #FFF;
 }
